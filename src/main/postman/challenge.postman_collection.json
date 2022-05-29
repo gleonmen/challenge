@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "b7e75b17-1c1f-4527-885b-b6f757f66668",
+		"name": "challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post_bad_request_height_not_valid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"height\" : [1,0,106]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/challenge-portal/v1/calculate-area",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"challenge-portal",
+						"v1",
+						"calculate-area"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_bad_request_size_not_valid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"height\" : [1,0,106]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/challenge-portal/v1/calculate-area",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"challenge-portal",
+						"v1",
+						"calculate-area"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_test_sucess",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"height\" : [1,8,6,2,5,4,8,3,7]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/challenge-portal/v1/calculate-area",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"challenge-portal",
+						"v1",
+						"calculate-area"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
